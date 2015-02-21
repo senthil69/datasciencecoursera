@@ -13,11 +13,11 @@ Download the URL and unzip the file. The files are stored under the directory "H
 
 ##Processing
 
-..* Load the features, activities in the table namely featureLabels and activityLabels
-..* Load the training and test data (X,Y,subject)- The data is converted into numeric. In case of invalid values, NA is substituted 
-..* Join the Y with activtyLabels,combine the colums (X,Y and subject) 
-..* Filter the feature names with std and mean keyword (case insensitive) 
-..* Merge training and test set using rbind
-..* Apply ddply on the data frame to group the values by person and activity 
+  * Load the features, activities in the table namely featureLabels and activityLabels
+  * Load the training and test data (X,Y,subject)- The data is converted into numeric. In case of invalid values, NA is substituted 
+  * Join the Y with activtyLabels,combine the colums (X,Y and subject) 
+  * Filter the feature names with std and mean keyword (case insensitive) 
+  * Merge training and test set using rbind
+  * Apply ddply on the data frame to group the values by person and activity 
 
 
