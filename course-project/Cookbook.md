@@ -21,11 +21,11 @@ The following steps were taken to process the input data
   * Load the features, activities in the table namely featureLabels and activityLabels
   * Load the training and test data (X,Y,subject)- The data is converted into numeric. In case of invalid values, NA is substituted 
   * Join the Y with activtyLabels,combine the colums (X,Y and subject) 
-  * Filter the feature names with std and mean keyword (case insensitive) 
+  * Filter the feature names with std and mean keyword (case insensitive) - Rest of the columns are dropped
   * Merge training and test set using rbind
   * Apply ddply on the data frame to group the values by person and activity 
 
-##Output Data Semantics 
+##Output Data
 
 The result file is result.csv. The fields follow the following naming convention 
 
